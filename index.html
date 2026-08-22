@@ -12,7 +12,11 @@
 
 <style>
 
-*{box-sizing:border-box}
+*{
+
+  box-sizing:border-box;
+
+}
 
 body{
 
@@ -24,16 +28,770 @@ body{
 
   background:#fff;
 
-  line-height:1.7;
+}
+
+a{
+
+  text-decoration:none;
+
+  color:inherit;
 
 }
 
-header{
+.header{
 
   background:#0878d1;
 
-  color:white;
+  color:#fff;
 
-  padding:18px 20px;
+  text-align:center;
 
-  position:st
+  padding:8px 12px;
+
+}
+
+.header .small{
+
+  font-size:13px;
+
+  font-weight:bold;
+
+}
+
+.logo{
+
+  background:#fff;
+
+  color:#0878d1;
+
+  margin:8px auto;
+
+  padding:10px;
+
+  border-radius:8px;
+
+  max-width:1100px;
+
+  font-size:30px;
+
+  font-weight:900;
+
+}
+
+.logo span{
+
+  color:#f2c400;
+
+}
+
+.tel{
+
+  background:#ffd900;
+
+  color:#073d78;
+
+  font-size:30px;
+
+  font-weight:900;
+
+  display:inline-block;
+
+  padding:8px 25px;
+
+  border-radius:8px;
+
+  margin:5px;
+
+}
+
+.area{
+
+  font-weight:bold;
+
+  margin:6px;
+
+}
+
+nav{
+
+  background:#063f91;
+
+  color:#fff;
+
+  display:flex;
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+
+}
+
+nav a{
+
+  padding:12px 25px;
+
+  font-weight:bold;
+
+  border-right:1px solid #fff;
+
+}
+
+.hero{
+
+  background:linear-gradient(135deg,#eaf7ff,#fff);
+
+  padding:25px 15px;
+
+  text-align:center;
+
+  border-bottom:5px solid #ffd900;
+
+}
+
+.hero h1{
+
+  color:#063f91;
+
+  font-size:42px;
+
+  margin:5px 0;
+
+}
+
+.hero h1 span{
+
+  color:#f2b900;
+
+}
+
+.hero h2{
+
+  color:#0878d1;
+
+  font-size:32px;
+
+  margin:5px;
+
+}
+
+.character{
+
+  width:220px;
+
+  height:220px;
+
+  margin:15px auto;
+
+  border-radius:50%;
+
+  background:#ffe7c2;
+
+  border:7px solid #0878d1;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  font-size:110px;
+
+}
+
+.catch{
+
+  font-size:18px;
+
+  font-weight:bold;
+
+}
+
+.cards{
+
+  max-width:1100px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:10px;
+
+  padding:15px;
+
+}
+
+.card{
+
+  border:3px solid #0878d1;
+
+  border-radius:10px;
+
+  padding:15px;
+
+  text-align:center;
+
+  background:#fff;
+
+}
+
+.card h3{
+
+  margin:0 0 8px;
+
+  color:#063f91;
+
+}
+
+.card strong{
+
+  color:#e00000;
+
+  font-size:20px;
+
+}
+
+section{
+
+  max-width:1100px;
+
+  margin:auto;
+
+  padding:30px 15px;
+
+}
+
+.title{
+
+  text-align:center;
+
+  color:#063f91;
+
+  font-size:30px;
+
+  font-weight:900;
+
+  border-bottom:5px solid #ffd900;
+
+  padding-bottom:8px;
+
+}
+
+.services{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:12px;
+
+}
+
+.service{
+
+  border:2px solid #ddd;
+
+  border-radius:10px;
+
+  padding:15px;
+
+  text-align:center;
+
+  box-shadow:0 2px 5px #ddd;
+
+}
+
+.service h3{
+
+  color:#063f91;
+
+  margin:5px;
+
+}
+
+.price{
+
+  color:#e00000;
+
+  font-weight:bold;
+
+  font-size:20px;
+
+}
+
+.contact{
+
+  background:#063f91;
+
+  color:#fff;
+
+  text-align:center;
+
+  padding:30px 15px;
+
+}
+
+.contact .tel{
+
+  font-size:32px;
+
+}
+
+.button{
+
+  display:inline-block;
+
+  background:#ffd900;
+
+  color:#063f91;
+
+  font-weight:900;
+
+  padding:14px 35px;
+
+  border-radius:8px;
+
+  margin-top:10px;
+
+}
+
+footer{
+
+  background:#0878d1;
+
+  color:#fff;
+
+  text-align:center;
+
+  padding:15px;
+
+  font-size:14px;
+
+}
+
+/* スマホ */
+
+@media(max-width:700px){
+
+  .logo{
+
+    font-size:21px;
+
+  }
+
+  .tel{
+
+    font-size:23px;
+
+    padding:7px 15px;
+
+  }
+
+  nav a{
+
+    font-size:12px;
+
+    padding:9px 8px;
+
+  }
+
+  .hero{
+
+    padding:18px 10px;
+
+  }
+
+  .hero h1{
+
+    font-size:27px;
+
+  }
+
+  .hero h2{
+
+    font-size:23px;
+
+  }
+
+  .character{
+
+    width:145px;
+
+    height:145px;
+
+    font-size:70px;
+
+  }
+
+  .cards{
+
+    grid-template-columns:repeat(3,1fr);
+
+    padding:8px;
+
+  }
+
+  .card{
+
+    padding:8px 3px;
+
+    font-size:11px;
+
+  }
+
+  .card strong{
+
+    font-size:15px;
+
+  }
+
+  section{
+
+    padding:20px 8px;
+
+  }
+
+  .title{
+
+    font-size:23px;
+
+  }
+
+  .services{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:8px;
+
+  }
+
+  .service{
+
+    padding:10px 5px;
+
+    font-size:13px;
+
+  }
+
+  .contact .tel{
+
+    font-size:24px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+  <div class="small">東京都23区の便利屋ならアットマン・荒川にお任せください！</div>
+
+  <div class="logo">
+
+    何でも屋<br>
+
+    <span>アットマン・荒川</span>
+
+  </div>
+
+  <div>
+
+    <div class="tel">0120-42-7778</div>
+
+  </div>
+
+  <div class="area">東京都23区対応！</div>
+
+</header>
+
+<nav>
+
+  <a href="#home">ホーム</a>
+
+  <a href="#service">サービス内容</a>
+
+  <a href="#price">料金</a>
+
+  <a href="#flow">ご利用の流れ</a>
+
+  <a href="#about">アットマンについて</a>
+
+  <a href="#contact">お問い合わせ</a>
+
+</nav>
+
+<main id="home">
+
+<section class="hero">
+
+  <div class="catch">どんな小さな困りごとでも</div>
+
+  <h1>
+
+    なんでもおまかせ！<br>
+
+    <span>暮らしの便利屋</span>
+
+  </h1>
+
+  <h2>アットマン・荒川</h2>
+
+  <div class="character">👨‍🔧</div>
+
+  <p>
+
+    あなたのお困りごとを<br>
+
+    スピード解決！
+
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>🕐 即日対応OK!</h3>
+
+      <p>急なお困りごとも<br>ご相談ください</p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>🚚 出張費無料!</h3>
+
+      <p>東京都23区内なら<br>出張費無料</p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>🏙 23区対応!</h3>
+
+      <p>東京都23区なら<br>どこでも対応</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="service">
+
+  <div class="title">サービス内容</div>
+
+  <div class="services">
+
+    <div class="service">
+
+      <h3>不用品回収</h3>
+
+      <p>家具・家電などの回収</p>
+
+      <div class="price">8,000円〜</div>
+
+    </div>
+
+    <div class="service">
+
+      <h3>家具の移動</h3>
+
+      <p>家具の移動・模様替え</p>
+
+      <div class="price">4,000円〜</div>
+
+    </div>
+
+    <div class="service">
+
+      <h3>家具の解体</h3>
+
+      <p>家具の解体・組立</p>
+
+      <div class="price">4,000円〜</div>
+
+    </div>
+
+    <div class="service">
+
+      <h3>家具の設置・取付け</h3>
+
+      <p>家具・棚などの設置</p>
+
+      <div class="price">5,000円〜</div>
+
+    </div>
+
+    <div class="service">
+
+      <h3>草刈り・枝切り</h3>
+
+      <p>お庭のお手入れ</p>
+
+      <div class="price">4,000円〜</div>
+
+    </div>
+
+    <div class="service">
+
+      <h3>簡易リフォーム</h3>
+
+      <p>小さな修繕もお任せ</p>
+
+      <div class="price">5,000円〜</div>
+
+    </div>
+
+    <div class="service">
+
+      <h3>引っ越しのお手伝い</h3>
+
+      <p>荷物運びなど</p>
+
+      <div class="price">8,000円〜</div>
+
+    </div>
+
+    <div class="service">
+
+      <h3>買い物代行</h3>
+
+      <p>お買い物を代行します</p>
+
+      <div class="price">4,000円〜</div>
+
+    </div>
+
+    <div class="service">
+
+      <h3>ハウスクリーニング</h3>
+
+      <p>お部屋のお掃除</p>
+
+      <div class="price">4,000円〜</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="price">
+
+  <div class="title">料金について</div>
+
+  <div class="card">
+
+    <p>
+
+      作業内容・時間・量などによって料金が異なります。<br>
+
+      お電話またはお問い合わせフォームからお気軽にご相談ください。
+
+    </p>
+
+    <div class="tel">0120-42-7778</div>
+
+  </div>
+
+</section>
+
+<section id="flow">
+
+  <div class="title">ご利用の流れ</div>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>① お問い合わせ</h3>
+
+      <p>まずはお電話・フォームからご相談ください。</p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>② お見積り</h3>
+
+      <p>内容を確認して料金をご案内します。</p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>③ 作業開始</h3>
+
+      <p>ご納得いただいてから作業いたします。</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="about">
+
+  <div class="title">アットマン・荒川について</div>
+
+  <div class="card">
+
+    <p>
+
+      「こんなこと頼めるかな？」という小さなお困りごとでも
+
+      お気軽にご相談ください。
+
+    </p>
+
+    <p>
+
+      東京都23区を中心に、皆さまの暮らしをお手伝いいたします。
+
+    </p>
+
+    <p>
+
+      丁寧・安心・親切を心がけて対応いたします。
+
+    </p>
+
+  </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+  <h2>まずはお気軽にご相談ください！</h2>
+
+  <div class="tel">0120-42-7778</div>
+
+  <p>受付時間 8:00〜20:00（年中無休）</p>
+
+  <a class="button" href="mailto:info@example.com">
+
+    ✉ お問い合わせフォーム
+
+  </a>
+
+</section>
+
+</main>
+
+<footer>
+
+  何でも屋 アットマン・荒川<br>
+
+  東京都23区対応
+
+</footer>
+
+</body>
+
+</html>
