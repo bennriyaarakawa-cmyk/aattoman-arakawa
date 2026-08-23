@@ -18,15 +18,21 @@
 
 }
 
+html{
+
+  scroll-behavior:smooth;
+
+}
+
 body{
 
   margin:0;
 
-  font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",sans-serif;
+  font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",sans-serif;
 
-  color:#123;
+  background:#eef8ff;
 
-  background:#fff;
+  color:#073b78;
 
 }
 
@@ -34,329 +40,295 @@ a{
 
   text-decoration:none;
 
-  color:inherit;
-
 }
 
-.header{
+.top{
 
   background:#0878d1;
 
   color:#fff;
 
-  text-align:center;
-
-  padding:8px 12px;
-
-}
-
-.header .small{
-
-  font-size:13px;
+  font-size:12px;
 
   font-weight:bold;
 
+  padding:7px 14px;
+
+  text-align:center;
+
 }
 
-.logo{
+header{
 
   background:#fff;
 
-  color:#0878d1;
-
-  margin:8px auto;
-
-  padding:10px;
-
-  border-radius:8px;
-
-  max-width:1100px;
-
-  font-size:30px;
-
-  font-weight:900;
+  border-bottom:5px solid #ffd400;
 
 }
 
-.logo span{
+.head{
 
-  color:#f2c400;
+  max-width:1180px;
 
-}
-
-.tel{
-
-  background:#ffd900;
-
-  color:#073d78;
-
-  font-size:30px;
-
-  font-weight:900;
-
-  display:inline-block;
-
-  padding:8px 25px;
-
-  border-radius:8px;
-
-  margin:5px;
-
-}
-
-.area{
-
-  font-weight:bold;
-
-  margin:6px;
-
-}
-
-nav{
-
-  background:#063f91;
-
-  color:#fff;
-
-  display:flex;
-
-  justify-content:center;
-
-  flex-wrap:wrap;
-
-}
-
-nav a{
-
-  padding:12px 25px;
-
-  font-weight:bold;
-
-  border-right:1px solid #fff;
-
-}
-
-.hero{
-
-  background:linear-gradient(135deg,#eaf7ff,#fff);
-
-  padding:25px 15px;
-
-  text-align:center;
-
-  border-bottom:5px solid #ffd900;
-
-}
-
-.hero h1{
-
-  color:#063f91;
-
-  font-size:42px;
-
-  margin:5px 0;
-
-}
-
-.hero h1 span{
-
-  color:#f2b900;
-
-}
-
-.hero h2{
-
-  color:#0878d1;
-
-  font-size:32px;
-
-  margin:5px;
-
-}
-
-.character{
-
-  width:220px;
-
-  height:220px;
-
-  margin:15px auto;
-
-  border-radius:50%;
-
-  background:#ffe7c2;
-
-  border:7px solid #0878d1;
+  margin:auto;
 
   display:flex;
 
   align-items:center;
 
-  justify-content:center;
+  gap:14px;
 
-  font-size:110px;
+  padding:9px 12px;
 
 }
 
-.catch{
+.logo{
 
-  font-size:18px;
+  font-weight:900;
+
+  font-size:24px;
+
+  line-height:1.05;
+
+}
+
+.logo b{
+
+  color:#0878d1;
+
+}
+
+.logo span{
+
+  color:#ffd400;
+
+  text-shadow:1px 1px #07508f;
+
+}
+
+.phone{
+
+  margin-left:auto;
+
+  background:#ffd400;
+
+  color:#07508f;
+
+  border-radius:12px;
+
+  padding:7px 15px;
+
+  font-size:24px;
+
+  font-weight:900;
+
+  white-space:nowrap;
+
+}
+
+nav{
+
+  display:flex;
+
+  gap:5px;
+
+}
+
+nav a{
+
+  background:#0878d1;
+
+  color:#fff;
+
+  padding:9px;
+
+  border-radius:6px;
+
+  font-size:12px;
 
   font-weight:bold;
 
 }
 
-.cards{
+.hero{
 
-  max-width:1100px;
+  background:linear-gradient(#0878d1,#20a6ef);
+
+  padding:14px 7px 9px;
+
+}
+
+.hero img{
+
+  display:block;
+
+  width:min(980px,100%);
 
   margin:auto;
 
+  border-radius:10px;
+
+  box-shadow:0 8px 22px #003b7a55;
+
+}
+
+.note{
+
+  width:min(980px,100%);
+
+  margin:8px auto 0;
+
+  background:#ffd400;
+
+  color:#07508f;
+
+  border-radius:9px;
+
+  text-align:center;
+
+  font-weight:900;
+
+  font-size:21px;
+
+  padding:8px;
+
+}
+
+.wrap{
+
+  max-width:1180px;
+
+  margin:auto;
+
+  padding:0 10px;
+
+}
+
+.section{
+
+  padding:22px 0;
+
+}
+
+h2{
+
+  text-align:center;
+
+  background:#0878d1;
+
+  color:#fff;
+
+  border-radius:9px;
+
+  padding:8px;
+
+  margin:0 0 12px;
+
+  font-size:24px;
+
+}
+
+.grid{
+
   display:grid;
 
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(4,1fr);
 
-  gap:10px;
-
-  padding:15px;
+  gap:9px;
 
 }
 
 .card{
 
-  border:3px solid #0878d1;
+  background:#fff;
 
-  border-radius:10px;
+  border:2px solid #c8e5f7;
 
-  padding:15px;
+  border-radius:9px;
+
+  padding:14px;
 
   text-align:center;
 
-  background:#fff;
-
-}
-
-.card h3{
-
-  margin:0 0 8px;
-
-  color:#063f91;
+  box-shadow:0 2px 8px #0001;
 
 }
 
 .card strong{
 
-  color:#e00000;
+  display:block;
 
-  font-size:20px;
+  font-size:16px;
 
-}
-
-section{
-
-  max-width:1100px;
-
-  margin:auto;
-
-  padding:30px 15px;
-
-}
-
-.title{
-
-  text-align:center;
-
-  color:#063f91;
-
-  font-size:30px;
-
-  font-weight:900;
-
-  border-bottom:5px solid #ffd900;
-
-  padding-bottom:8px;
-
-}
-
-.services{
-
-  display:grid;
-
-  grid-template-columns:repeat(3,1fr);
-
-  gap:12px;
-
-}
-
-.service{
-
-  border:2px solid #ddd;
-
-  border-radius:10px;
-
-  padding:15px;
-
-  text-align:center;
-
-  box-shadow:0 2px 5px #ddd;
-
-}
-
-.service h3{
-
-  color:#063f91;
-
-  margin:5px;
+  margin-bottom:5px;
 
 }
 
 .price{
 
-  color:#e00000;
+  color:#e21b23;
 
-  font-weight:bold;
+  font-size:20px;
+
+  font-weight:900;
+
+}
+
+.flow{
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:9px;
+
+}
+
+.flow .card{
+
+  border-color:#0878d1;
+
+}
+
+.num{
+
+  display:inline-flex;
+
+  width:38px;
+
+  height:38px;
+
+  border-radius:50%;
+
+  background:#0878d1;
+
+  color:#fff;
+
+  align-items:center;
+
+  justify-content:center;
+
+  font-weight:900;
 
   font-size:20px;
 
 }
 
+.about{
+
+  background:#fff;
+
+  border-left:7px solid #ffd400;
+
+  border-radius:9px;
+
+  padding:17px;
+
+  line-height:1.8;
+
+}
+
 .contact{
-
-  background:#063f91;
-
-  color:#fff;
-
-  text-align:center;
-
-  padding:30px 15px;
-
-}
-
-.contact .tel{
-
-  font-size:32px;
-
-}
-
-.button{
-
-  display:inline-block;
-
-  background:#ffd900;
-
-  color:#063f91;
-
-  font-weight:900;
-
-  padding:14px 35px;
-
-  border-radius:8px;
-
-  margin-top:10px;
-
-}
-
-footer{
 
   background:#0878d1;
 
@@ -364,119 +336,221 @@ footer{
 
   text-align:center;
 
-  padding:15px;
-
-  font-size:14px;
+  padding:24px 10px;
 
 }
 
-/* スマホ */
+.bigphone{
 
-@media(max-width:700px){
+  display:inline-block;
+
+  background:#ffd400;
+
+  color:#07508f;
+
+  border-radius:12px;
+
+  padding:7px 20px;
+
+  font-size:34px;
+
+  font-weight:900;
+
+}
+
+.callnow{
+
+  margin:8px auto;
+
+  background:#07508f;
+
+  color:#fff;
+
+  border-radius:8px;
+
+  padding:7px 18px;
+
+  font-size:20px;
+
+  font-weight:900;
+
+  width:max-content;
+
+}
+
+.form{
+
+  display:inline-block;
+
+  background:#ef2029;
+
+  color:#fff;
+
+  border-radius:9px;
+
+  padding:12px 25px;
+
+  font-size:18px;
+
+  font-weight:900;
+
+}
+
+footer{
+
+  background:#07508f;
+
+  color:#fff;
+
+  text-align:center;
+
+  padding:11px;
+
+  font-size:11px;
+
+}
+
+@media(max-width:760px){
+
+  .top{
+
+    font-size:9px;
+
+  }
+
+  .head{
+
+    padding:8px 8px;
+
+  }
 
   .logo{
 
-    font-size:21px;
+    font-size:18px;
 
   }
 
-  .tel{
+  .phone{
 
-    font-size:23px;
+    font-size:15px;
 
-    padding:7px 15px;
+    padding:7px 8px;
 
   }
 
-  nav a{
+  nav{
 
-    font-size:12px;
-
-    padding:9px 8px;
+    display:none;
 
   }
 
   .hero{
 
-    padding:18px 10px;
+    padding:8px 5px;
 
   }
 
-  .hero h1{
+  .hero img{
 
-    font-size:27px;
-
-  }
-
-  .hero h2{
-
-    font-size:23px;
+    border-radius:7px;
 
   }
 
-  .character{
+  .note{
 
-    width:145px;
+    font-size:16px;
 
-    height:145px;
+    margin-top:6px;
 
-    font-size:70px;
+    padding:7px;
 
   }
 
-  .cards{
+  .section{
 
-    grid-template-columns:repeat(3,1fr);
+    padding:15px 0;
 
-    padding:8px;
+  }
+
+  .wrap{
+
+    padding:0 7px;
+
+  }
+
+  h2{
+
+    font-size:19px;
+
+  }
+
+  .grid{
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:5px;
 
   }
 
   .card{
 
-    padding:8px 3px;
-
-    font-size:11px;
+    padding:9px 2px;
 
   }
 
   .card strong{
 
-    font-size:15px;
+    font-size:11px;
 
   }
 
-  section{
-
-    padding:20px 8px;
-
-  }
-
-  .title{
-
-    font-size:23px;
-
-  }
-
-  .services{
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:8px;
-
-  }
-
-  .service{
-
-    padding:10px 5px;
+  .price{
 
     font-size:13px;
 
   }
 
-  .contact .tel{
+  .flow{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:6px;
+
+  }
+
+  .flow .card{
+
+    padding:9px 4px;
+
+  }
+
+  .about{
+
+    font-size:13px;
+
+    padding:12px;
+
+  }
+
+  .bigphone{
 
     font-size:24px;
+
+    padding:7px 12px;
+
+  }
+
+  .callnow{
+
+    font-size:16px;
+
+  }
+
+  .form{
+
+    font-size:15px;
+
+    padding:11px 18px;
 
   }
 
@@ -488,307 +562,259 @@ footer{
 
 <body>
 
-<header class="header">
+<div class="top">
 
-  <div class="small">東京都23区の便利屋ならアットマン・荒川にお任せください！</div>
+東京都23区の便利屋ならアットマン・荒川にお任せください！
 
-  <div class="logo">
+受付 8:00〜20:00（年中無休）
 
-    何でも屋<br>
+</div>
 
-    <span>アットマン・荒川</span>
+<header>
 
-  </div>
+<div class="head">
 
-  <div>
+<div class="logo">
 
-    <div class="tel">0120-42-7778</div>
+<b>何でも屋</b><br>
 
-  </div>
+<span>アットマン・荒川</span>
 
-  <div class="area">東京都23区対応！</div>
+</div>
 
-</header>
+<a class="phone" href="tel:0120427778">
+
+☎ 0120-42-7778
+
+</a>
 
 <nav>
 
-  <a href="#home">ホーム</a>
+<a href="#service">サービス</a>
 
-  <a href="#service">サービス内容</a>
+<a href="#flow">ご利用の流れ</a>
 
-  <a href="#price">料金</a>
+<a href="#about">アットマンについて</a>
 
-  <a href="#flow">ご利用の流れ</a>
-
-  <a href="#about">アットマンについて</a>
-
-  <a href="#contact">お問い合わせ</a>
+<a href="#contact">お問い合わせ</a>
 
 </nav>
 
-<main id="home">
+</div>
+
+</header>
 
 <section class="hero">
 
-  <div class="catch">どんな小さな困りごとでも</div>
+<div class="wrap">
 
-  <h1>
+<img
 
-    なんでもおまかせ！<br>
+src="attoman-approved-design.png"
 
-    <span>暮らしの便利屋</span>
+alt="何でも屋 アットマン・荒川"
 
-  </h1>
+>
 
-  <h2>アットマン・荒川</h2>
+<div class="note">
 
-  <div class="character">👨‍🔧</div>
+どんな小さな困りごとも、お電話ください！
 
-  <p>
+</div>
 
-    あなたのお困りごとを<br>
-
-    スピード解決！
-
-  </p>
-
-  <div class="cards">
-
-    <div class="card">
-
-      <h3>🕐 即日対応OK!</h3>
-
-      <p>急なお困りごとも<br>ご相談ください</p>
-
-    </div>
-
-    <div class="card">
-
-      <h3>🚚 出張費無料!</h3>
-
-      <p>東京都23区内なら<br>出張費無料</p>
-
-    </div>
-
-    <div class="card">
-
-      <h3>🏙 23区対応!</h3>
-
-      <p>東京都23区なら<br>どこでも対応</p>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
-<section id="service">
+<section class="section" id="service">
 
-  <div class="title">サービス内容</div>
+<div class="wrap">
 
-  <div class="services">
+<h2>サービス内容・料金</h2>
 
-    <div class="service">
+<div class="grid">
 
-      <h3>不用品回収</h3>
+<div class="card">
 
-      <p>家具・家電などの回収</p>
+<strong>不用品回収</strong>
 
-      <div class="price">8,000円〜</div>
+<div class="price">8,000円〜</div>
 
-    </div>
+</div>
 
-    <div class="service">
+<div class="card">
 
-      <h3>家具の移動</h3>
+<strong>家具の移動</strong>
 
-      <p>家具の移動・模様替え</p>
+<div class="price">4,000円〜</div>
 
-      <div class="price">4,000円〜</div>
+</div>
 
-    </div>
+<div class="card">
 
-    <div class="service">
+<strong>家具の組み立て</strong>
 
-      <h3>家具の解体</h3>
+<div class="price">4,000円〜</div>
 
-      <p>家具の解体・組立</p>
+</div>
 
-      <div class="price">4,000円〜</div>
+<div class="card">
 
-    </div>
+<strong>荷物の運搬・お手伝い</strong>
 
-    <div class="service">
+<div class="price">5,000円〜</div>
 
-      <h3>家具の設置・取付け</h3>
+</div>
 
-      <p>家具・棚などの設置</p>
+<div class="card">
 
-      <div class="price">5,000円〜</div>
+<strong>草刈り・枝切り</strong>
 
-    </div>
+<div class="price">4,000円〜</div>
 
-    <div class="service">
+</div>
 
-      <h3>草刈り・枝切り</h3>
+<div class="card">
 
-      <p>お庭のお手入れ</p>
+<strong>簡単リフォーム</strong>
 
-      <div class="price">4,000円〜</div>
+<div class="price">5,000円〜</div>
 
-    </div>
+</div>
 
-    <div class="service">
+<div class="card">
 
-      <h3>簡易リフォーム</h3>
+<strong>引っ越しのお手伝い</strong>
 
-      <p>小さな修繕もお任せ</p>
+<div class="price">8,000円〜</div>
 
-      <div class="price">5,000円〜</div>
+</div>
 
-    </div>
+<div class="card">
 
-    <div class="service">
+<strong>ハウスクリーニング</strong>
 
-      <h3>引っ越しのお手伝い</h3>
+<div class="price">4,000円〜</div>
 
-      <p>荷物運びなど</p>
+</div>
 
-      <div class="price">8,000円〜</div>
+</div>
 
-    </div>
-
-    <div class="service">
-
-      <h3>買い物代行</h3>
-
-      <p>お買い物を代行します</p>
-
-      <div class="price">4,000円〜</div>
-
-    </div>
-
-    <div class="service">
-
-      <h3>ハウスクリーニング</h3>
-
-      <p>お部屋のお掃除</p>
-
-      <div class="price">4,000円〜</div>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
-<section id="price">
+<section class="section" id="flow">
 
-  <div class="title">料金について</div>
+<div class="wrap">
 
-  <div class="card">
+<h2>ご利用の流れ</h2>
 
-    <p>
+<div class="flow">
 
-      作業内容・時間・量などによって料金が異なります。<br>
+<div class="card">
 
-      お電話またはお問い合わせフォームからお気軽にご相談ください。
+<span class="num">1</span>
 
-    </p>
+<strong>お問い合わせ</strong>
 
-    <div class="tel">0120-42-7778</div>
+<p>お電話またはフォームからお気軽にご連絡ください。</p>
 
-  </div>
+</div>
 
-</section>
+<div class="card">
 
-<section id="flow">
+<span class="num">2</span>
 
-  <div class="title">ご利用の流れ</div>
+<strong>無料お見積り</strong>
 
-  <div class="cards">
+<p>内容を確認し、無料でお見積りいたします。</p>
 
-    <div class="card">
+</div>
 
-      <h3>① お問い合わせ</h3>
+<div class="card">
 
-      <p>まずはお電話・フォームからご相談ください。</p>
+<span class="num">3</span>
 
-    </div>
+<strong>作業開始</strong>
 
-    <div class="card">
+<p>ご納得いただけましたら作業を開始します。</p>
 
-      <h3>② お見積り</h3>
+</div>
 
-      <p>内容を確認して料金をご案内します。</p>
+<div class="card">
 
-    </div>
+<span class="num">4</span>
 
-    <div class="card">
+<strong>作業完了</strong>
 
-      <h3>③ 作業開始</h3>
+<p>作業完了後、ご確認いただきます。</p>
 
-      <p>ご納得いただいてから作業いたします。</p>
+</div>
 
-    </div>
+</div>
 
-  </div>
-
-</section>
-
-<section id="about">
-
-  <div class="title">アットマン・荒川について</div>
-
-  <div class="card">
-
-    <p>
-
-      「こんなこと頼めるかな？」という小さなお困りごとでも
-
-      お気軽にご相談ください。
-
-    </p>
-
-    <p>
-
-      東京都23区を中心に、皆さまの暮らしをお手伝いいたします。
-
-    </p>
-
-    <p>
-
-      丁寧・安心・親切を心がけて対応いたします。
-
-    </p>
-
-  </div>
+</div>
 
 </section>
 
-<section id="contact" class="contact">
+<section class="section" id="about">
 
-  <h2>まずはお気軽にご相談ください！</h2>
+<div class="wrap">
 
-  <div class="tel">0120-42-7778</div>
+<h2>アットマン・荒川について</h2>
 
-  <p>受付時間 8:00〜20:00（年中無休）</p>
+<div class="about">
 
-  <a class="button" href="mailto:info@example.com">
+<b>地域に密着した、安心・丁寧・迅速な便利屋です。</b>
 
-    ✉ お問い合わせフォーム
+<br>
 
-  </a>
+小さなことから大きなことまで、真心を込めて対応いたします。
+
+お気軽にご相談ください！
+
+</div>
+
+</div>
 
 </section>
 
-</main>
+<section class="contact" id="contact">
+
+<h2>まずはお気軽にご相談ください！</h2>
+
+<a class="bigphone" href="tel:0120427778">
+
+☎ 0120-42-7778
+
+</a>
+
+<div class="callnow">
+
+今すぐお電話ください！
+
+</div>
+
+<div>
+
+受付時間 8:00〜20:00（年中無休）
+
+</div>
+
+<br>
+
+<a class="form" href="#contact">
+
+✉ お問い合わせフォームはこちら
+
+</a>
+
+</section>
 
 <footer>
 
-  何でも屋 アットマン・荒川<br>
-
-  東京都23区対応
+© 何でも屋 アットマン・荒川　東京都23区対応
 
 </footer>
 
